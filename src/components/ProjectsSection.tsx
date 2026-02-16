@@ -4,35 +4,35 @@ import { Badge } from "@/components/ui/badge";
 
 const projects = [
   {
-    name: "EcoTrack",
-    description: "AI-powered carbon footprint tracker that gamifies sustainability. Won 1st place at TreeHacks 2024.",
+    name: "NAMe",
+    description: "Des",
     techStack: ["React", "TensorFlow", "Node.js", "MongoDB"],
     liveUrl: "#",
     githubUrl: "#",
-    award: "1st Place — $10,000",
+    award: "1st Place — ₹10,000",
   },
   {
-    name: "MindMesh",
-    description: "Decentralized mental health platform connecting therapists globally through Web3.",
+    name: "name",
+    description: "Des",
     techStack: ["Next.js", "Solidity", "IPFS", "Polygon"],
     liveUrl: "#",
     githubUrl: "#",
-    award: "Best UX — $5,000",
+    award: "Best UX — ₹5,000",
   },
   {
-    name: "CodeCollab",
-    description: "Real-time collaborative IDE with AI pair programming assistant.",
+    name: "namw",
+    description: "des",
     techStack: ["TypeScript", "WebSocket", "OpenAI", "Redis"],
     liveUrl: "#",
     githubUrl: "#",
   },
   {
-    name: "FinFlow",
-    description: "Personal finance dashboard with predictive analytics and investment insights.",
+    name: "name",
+    description: "des",
     techStack: ["Vue.js", "Python", "FastAPI", "PostgreSQL"],
     liveUrl: "#",
     githubUrl: "#",
-    award: "Runner Up — $2,500",
+    award: "Runner Up — ₹2,500",
   },
 ];
 
