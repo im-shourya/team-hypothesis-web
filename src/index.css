@@ -1,81 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
-
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 220 20% 10%;
+    --background: 260 30% 96%;
+    --foreground: 260 20% 10%;
 
-    --card: 0 0% 98%;
-    --card-foreground: 220 20% 10%;
+    --card: 260 20% 93%;
+    --card-foreground: 260 20% 10%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 10%;
+    --popover: 260 30% 96%;
+    --popover-foreground: 260 20% 10%;
 
-    --primary: 186 100% 50%;
-    --primary-foreground: 220 20% 5%;
+    --primary: 270 80% 55%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 280 80% 60%;
+    --secondary: 280 100% 65%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 10% 92%;
-    --muted-foreground: 220 10% 40%;
+    --muted: 260 15% 90%;
+    --muted-foreground: 260 10% 40%;
 
-    --accent: 186 100% 50%;
-    --accent-foreground: 220 20% 5%;
+    --accent: 275 70% 72%;
+    --accent-foreground: 260 20% 5%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 10% 85%;
-    --input: 220 10% 85%;
-    --ring: 186 100% 50%;
+    --border: 260 15% 82%;
+    --input: 260 15% 82%;
+    --ring: 270 80% 55%;
 
     --radius: 0.5rem;
 
-    /* Custom colors */
-    --glow-cyan: 186 100% 50%;
-    --glow-purple: 280 80% 60%;
+    --glow-violet: 270 80% 55%;
+    --glow-neon: 280 100% 65%;
     --glow-gold: 45 100% 50%;
-    --diamond-gradient: linear-gradient(135deg, hsl(186 100% 50%), hsl(280 80% 60%));
-    --prism-gradient: linear-gradient(135deg, 
-      hsla(186, 100%, 50%, 0.1), 
-      hsla(280, 80%, 60%, 0.1), 
-      hsla(45, 100%, 50%, 0.1)
+    --kc-gradient: linear-gradient(135deg, hsl(270 80% 55%), hsl(280 100% 65%));
+    --prism-gradient: linear-gradient(135deg,
+      hsla(270, 80%, 55%, 0.1),
+      hsla(280, 100%, 65%, 0.1),
+      hsla(265, 85%, 12%, 0.1)
     );
   }
 
   .dark {
-    --background: 222 47% 6%;
-    --foreground: 210 40% 98%;
+    --background: 260 50% 5%;
+    --foreground: 240 10% 90%;
 
-    --card: 222 47% 8%;
-    --card-foreground: 210 40% 98%;
+    --card: 260 45% 8%;
+    --card-foreground: 240 10% 90%;
 
-    --popover: 222 47% 8%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 260 45% 8%;
+    --popover-foreground: 240 10% 90%;
 
-    --primary: 186 100% 50%;
-    --primary-foreground: 220 20% 5%;
+    --primary: 270 80% 55%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 280 80% 60%;
+    --secondary: 280 100% 65%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 222 30% 15%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 260 30% 15%;
+    --muted-foreground: 250 15% 65%;
 
-    --accent: 186 100% 50%;
-    --accent-foreground: 220 20% 5%;
+    --accent: 275 70% 72%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62% 30%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 240 10% 90%;
 
-    --border: 222 30% 18%;
-    --input: 222 30% 18%;
-    --ring: 186 100% 50%;
+    --border: 260 30% 18%;
+    --input: 260 30% 18%;
+    --ring: 270 80% 55%;
   }
 }
 
@@ -89,7 +88,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-mono;
+    font-family: 'Orbitron', 'JetBrains Mono', monospace;
   }
 }
 
@@ -98,15 +97,15 @@
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   }
 
-  .glow-cyan {
-    box-shadow: 0 0 20px hsla(186, 100%, 50%, 0.5),
-                0 0 40px hsla(186, 100%, 50%, 0.3),
-                0 0 60px hsla(186, 100%, 50%, 0.1);
+  .glow-violet {
+    box-shadow: 0 0 20px hsla(270, 80%, 55%, 0.5),
+                0 0 40px hsla(270, 80%, 55%, 0.3),
+                0 0 60px hsla(270, 80%, 55%, 0.1);
   }
 
-  .glow-purple {
-    box-shadow: 0 0 20px hsla(280, 80%, 60%, 0.5),
-                0 0 40px hsla(280, 80%, 60%, 0.3);
+  .glow-neon {
+    box-shadow: 0 0 20px hsla(280, 100%, 65%, 0.5),
+                0 0 40px hsla(280, 100%, 65%, 0.3);
   }
 
   .glow-gold {
@@ -114,10 +113,16 @@
                 0 0 40px hsla(45, 100%, 50%, 0.3);
   }
 
-  .text-glow-cyan {
-    text-shadow: 0 0 10px hsla(186, 100%, 50%, 0.8),
-                 0 0 20px hsla(186, 100%, 50%, 0.5),
-                 0 0 40px hsla(186, 100%, 50%, 0.3);
+  .text-glow-violet {
+    text-shadow: 0 0 10px hsla(270, 80%, 55%, 0.8),
+                 0 0 20px hsla(270, 80%, 55%, 0.5),
+                 0 0 40px hsla(270, 80%, 55%, 0.3);
+  }
+
+  .text-glow-neon {
+    text-shadow: 0 0 10px hsla(280, 100%, 65%, 0.8),
+                 0 0 20px hsla(280, 100%, 65%, 0.5),
+                 0 0 40px hsla(280, 100%, 65%, 0.3);
   }
 
   .text-glow-gold {
@@ -152,11 +157,18 @@
   }
 
   .prism-bg {
-    background: linear-gradient(135deg, 
-      hsla(186, 100%, 50%, 0.05) 0%,
-      hsla(280, 80%, 60%, 0.05) 50%,
-      hsla(45, 100%, 50%, 0.05) 100%
+    background: linear-gradient(135deg,
+      hsla(270, 80%, 55%, 0.05) 0%,
+      hsla(280, 100%, 65%, 0.05) 50%,
+      hsla(265, 85%, 12%, 0.08) 100%
     );
+  }
+
+  .circuit-bg {
+    background-image:
+      radial-gradient(circle at 20% 80%, hsla(270, 80%, 55%, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsla(280, 100%, 65%, 0.06) 0%, transparent 50%),
+      radial-gradient(circle at 50% 50%, hsla(265, 85%, 12%, 0.1) 0%, transparent 70%);
   }
 
   .card-hover {
@@ -164,7 +176,7 @@
   }
 
   .card-hover:hover {
-    box-shadow: 0 10px 40px hsla(186, 100%, 50%, 0.15);
+    box-shadow: 0 10px 40px hsla(270, 80%, 55%, 0.15);
   }
 
   .gradient-border {
@@ -188,6 +200,12 @@
 
   .timeline-line {
     @apply absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-secondary to-primary;
+  }
+
+  .kc-hero-grid {
+    background-image: linear-gradient(hsla(270, 80%, 55%, 0.08) 1px, transparent 1px),
+                       linear-gradient(90deg, hsla(270, 80%, 55%, 0.08) 1px, transparent 1px);
+    background-size: 50px 50px;
   }
 }
 
@@ -253,7 +271,6 @@
   to { opacity: 1; }
 }
 
-/* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 8px;
 }

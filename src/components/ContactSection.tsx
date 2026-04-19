@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Github, Linkedin, Twitter, MessageCircle, Mail, Check, Copy, Instagram } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
 const socials = [
@@ -8,40 +7,40 @@ const socials = [
     name: "Discord",
     icon: MessageCircle,
     url: "#",
-    handle: "Team Hypothesis",
+    handle: "KernelCrew",
     color: "hover:text-indigo-400",
   },
   {
     name: "GitHub",
     icon: Github,
     url: "#",
-    handle: "@team-hypothesis",
+    handle: "@kernelcrew",
     color: "hover:text-foreground",
   },
   {
     name: "LinkedIn",
     icon: Linkedin,
     url: "#",
-    handle: "Team Hypothesis",
+    handle: "KernelCrew",
     color: "hover:text-blue-400",
   },
   {
     name: "Twitter",
     icon: Twitter,
     url: "#",
-    handle: "@teamhypothesis",
+    handle: "@kernelcrew",
     color: "hover:text-sky-400",
   },
   {
     name: "Instagram",
     icon: Instagram,
     url: "#",
-    handle: "@teamdiamond",
+    handle: "@kernelcrew",
     color: "hover:text-purple-300",
   }
 ];
 
-const email = "hello@teamhypothesis.dev";
+const email = "hello@kernelcrew.dev";
 
 const ContactSection = () => {
   const [copied, setCopied] = useState(false);
@@ -56,11 +55,11 @@ const ContactSection = () => {
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 prism-bg" />
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-mono font-bold mb-4">
-            <span className="text-primary text-glow-cyan">Get in Touch</span>
+          <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
+            <span className="text-primary text-glow-violet">Get in Touch</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Want to collaborate, sponsor, or just say hi? We're always open to new connections.
@@ -68,13 +67,12 @@ const ContactSection = () => {
         </div>
 
         <div className="max-w-3xl mx-auto">
-          {/* Email with Copy */}
           <div className="gradient-border rounded-xl p-8 bg-card text-center mb-12">
             <Mail className="mx-auto mb-4 text-primary" size={32} />
             <p className="text-sm text-muted-foreground mb-2">Drop us a line at</p>
             <button
               onClick={copyEmail}
-              className="group flex items-center gap-3 mx-auto font-mono text-xl md:text-2xl text-primary hover:text-glow-cyan transition-all"
+              className="group flex items-center gap-3 mx-auto font-mono text-xl md:text-2xl text-primary hover:text-glow-violet transition-all"
             >
               {email}
               {copied ? (
@@ -86,7 +84,6 @@ const ContactSection = () => {
             <p className="text-xs text-muted-foreground mt-2">Click to copy</p>
           </div>
 
-          {/* Social Links */}
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             {socials.map((social) => {
               const Icon = social.icon;

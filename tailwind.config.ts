@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         mono: ["JetBrains Mono", "monospace"],
         sans: ["Inter", "sans-serif"],
+        display: ["Orbitron", "JetBrains Mono", "monospace"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -52,8 +53,8 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         glow: {
-          cyan: "hsl(var(--glow-cyan))",
-          purple: "hsl(var(--glow-purple))",
+          violet: "hsl(var(--glow-violet))",
+          neon: "hsl(var(--glow-neon))",
           gold: "hsl(var(--glow-gold))",
         },
       },

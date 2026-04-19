@@ -23,18 +23,17 @@ const TechStackSection = () => {
   return (
     <section className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 prism-bg" />
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-mono font-bold mb-4">
-            <span className="text-primary text-glow-cyan">Our Toolbox</span>
+          <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
+            <span className="text-primary text-glow-violet">Our Arsenal</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             The technologies we wield to build award-winning projects.
           </p>
         </div>
 
-        {/* Tech Grid */}
         <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
           {technologies.map((tech, index) => (
             <div
@@ -45,8 +44,7 @@ const TechStackSection = () => {
               <span className="font-mono text-sm font-medium group-hover:text-primary transition-colors">
                 {tech.name}
               </span>
-              
-              {/* Tooltip */}
+
               <div className="absolute -top-10 left-1/2 -translate-x-1/2 px-2 py-1 bg-primary text-primary-foreground text-xs font-mono rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
                 {tech.category}
               </div>
@@ -54,7 +52,6 @@ const TechStackSection = () => {
           ))}
         </div>
 
-        {/* Category Legend */}
         <div className="flex flex-wrap justify-center gap-4 mt-12">
           {categories.slice(0, 6).map((category) => (
             <div key={category} className="flex items-center gap-2 text-xs text-muted-foreground">
