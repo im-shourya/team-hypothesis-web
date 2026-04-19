@@ -26,7 +26,7 @@ const perks = [
 ];
 
 const neededSkills = [
-  "React", "Python", "Figma", "Node.js", "Machine Learning", 
+  "React", "Python", "Figma", "Node.js", "Machine Learning",
   "UI/UX Design", "Solidity", "DevOps"
 ];
 
@@ -35,8 +35,8 @@ const JoinSection = () => {
     <section id="join" className="py-24 relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-mono font-bold mb-4">
-            <span className="text-primary text-glow-cyan">Join the Squad</span>
+          <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
+            <span className="text-primary text-glow-violet">Join the Crew</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             We're always looking for passionate hackers who love building cool stuff.
@@ -44,11 +44,10 @@ const JoinSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {/* Left: Why Join */}
           <div>
-            <h3 className="text-xl font-mono font-bold mb-6 flex items-center gap-2">
+            <h3 className="text-xl font-display font-bold mb-6 flex items-center gap-2">
               <Sparkles className="text-primary" size={20} />
-              Why Join Team Hypothesis?
+              Why Join KernelCrew?
             </h3>
 
             <div className="grid gap-4">
@@ -72,9 +71,8 @@ const JoinSection = () => {
             </div>
           </div>
 
-          {/* Right: We Need */}
           <div>
-            <h3 className="text-xl font-mono font-bold mb-6">
+            <h3 className="text-xl font-display font-bold mb-6">
               <span className="text-primary">{"<"}</span>
               Skills We're Looking For
               <span className="text-primary">{"/>"}</span>
@@ -99,13 +97,13 @@ const JoinSection = () => {
               <a href="/recruitment" target="_blank" rel="noopener noreferrer">
                 <Button
                 size="lg"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 glow-cyan font-mono w-full sm:w-auto"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 glow-violet font-mono w-full sm:w-auto"
                 >
                 <Github className="mr-2" size={20} />
                 Apply via GitHub
                 </Button>
               </a>
-              
+
               <p className="text-xs text-muted-foreground mt-4">
                 We'll review your repos and reach out within 48 hours
               </p>

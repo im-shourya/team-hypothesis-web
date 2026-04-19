@@ -41,8 +41,8 @@ const ProjectsSection = () => {
     <section id="projects" className="py-24 relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-mono font-bold mb-4">
-            <span className="text-primary text-glow-cyan">Project Portfolio</span>
+          <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
+            <span className="text-primary text-glow-violet">Project Portfolio</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             What we've shipped. Each project born from 36 hours of pure focus.
@@ -56,10 +56,9 @@ const ProjectsSection = () => {
               className="gradient-border rounded-xl p-6 card-hover bg-card group"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              {/* Header */}
               <div className="flex items-start justify-between mb-4">
                 <div>
-                  <h3 className="text-2xl font-mono font-bold group-hover:text-primary transition-colors">
+                  <h3 className="text-2xl font-display font-bold group-hover:text-primary transition-colors">
                     {project.name}
                   </h3>
                   {project.award && (
@@ -89,10 +88,8 @@ const ProjectsSection = () => {
                 </div>
               </div>
 
-              {/* Description */}
               <p className="text-muted-foreground mb-6">{project.description}</p>
 
-              {/* Tech Stack */}
               <div className="flex flex-wrap gap-2">
                 {project.techStack.map((tech) => (
                   <Badge

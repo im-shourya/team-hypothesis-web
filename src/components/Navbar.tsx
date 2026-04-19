@@ -4,7 +4,6 @@ import ThemeToggle from "./ThemeToggle";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  // { name: "About", href: "#about" },
   { name: "Team", href: "#founders" },
   { name: "Events", href: "#events" },
   { name: "Achievements", href: "#achievements" },
@@ -20,15 +19,17 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 diamond-shape bg-primary group-hover:glow-cyan transition-all duration-300" />
-            <span className="font-mono font-bold text-lg text-glow-cyan">
-              Team Hypothesis
+          <a href="#" className="flex items-center gap-3 group">
+            <img
+              src="/kernelcrew-logo.png"
+              alt="KernelCrew Logo"
+              className="w-10 h-10 rounded-lg group-hover:scale-110 transition-transform duration-300"
+            />
+            <span className="font-display font-bold text-lg text-glow-violet tracking-wider">
+              KernelCrew
             </span>
           </a>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <a
@@ -43,7 +44,6 @@ const Navbar = () => {
             <ThemeToggle />
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="flex md:hidden items-center gap-4">
             <ThemeToggle />
             <button
@@ -56,7 +56,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         <div
           className={cn(
             "md:hidden overflow-hidden transition-all duration-300",
